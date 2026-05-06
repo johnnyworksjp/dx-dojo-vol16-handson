@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DX Dojo - Docker Handson</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+      background: linear-gradient(135deg, #264653 0%, #2A9D8F 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #F4F1DE;
+      padding: 2rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 3rem 4rem;
+      text-align: center;
+      max-width: 600px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #E76F51, #F4A261);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .badge {
+      display: inline-block;
+      background: #E76F51;
+      color: white;
+      padding: 0.3rem 1rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+    }
+    p { font-size: 1.1rem; margin-bottom: 0.7rem; opacity: 0.95; }
+    .meta { font-size: 0.85rem; opacity: 0.6; margin-top: 2rem; }
+    code {
+      background: rgba(0, 0, 0, 0.25);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-family: "Courier New", monospace;
+      color: #F4A261;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">DX 道場 Vol.16</span>
+    <h1>Hello, DX Dojo!</h1>
+    <p>このページは <code>docker compose up</code> で起動した Nginx コンテナから配信されています。</p>
+    <p>あなたのPCを汚さず、1コマンドで開発環境が立ち上がる ― それが Docker の魔法です。</p>
+    <p class="meta">Container: nginx:alpine  /  Port: 80 → 8080</p>
+  </div>
+</body>
+</html>
